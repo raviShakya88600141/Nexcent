@@ -2,9 +2,33 @@ body {
           font-family: "Inter", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+          color: #4D4D4D !important;
+}
+
+.nav-link {
+          margin-right: 20px;
+
+}
+
+.nav-link:hover {
+          color: #4CAF4F !important;
+
+}
+
 h2 {
           font-size: 2.5rem;
           font-weight: 600;
+
+}
+
+p {
+          color: #717171 !important;
 }
 
 .btn {
@@ -14,6 +38,10 @@ h2 {
 .btn-success {
           background-color: #4CAF4F !important;
           border: #4CAF4F;
+}
+
+.bg-light {
+          background-color: #F5F7FA !important;
 }
 
 .text-success {
@@ -32,7 +60,7 @@ h2 {
 }
 
 .business_helping img {
-          max-width: 60px;
+          max-width: 40px;
 }
 
 .hero-section h1 {
@@ -60,9 +88,16 @@ h2 {
 
 .content-taker {
           position: absolute;
-          top: 135px;
-          right: 82px;
-          width: 250px !important;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 250px;
+          border-radius: 6px;
+}
+
+.content-taker h6,
+.content-taker .btn {
+          margin-bottom: 0px !important;
+          padding-bottom: 0px !important;
 }
 
 .emailer {
@@ -86,12 +121,32 @@ h2 {
 
 }
 
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+          width: 12px;
+          height: 12px;
+          background-color: #4CAF4F;
+}
+
+.client-icons img {
+          width: 40px;
+          height: 100%;
+}
 
 
 footer a {
           text-decoration: none;
           font-size: 15px;
 
+}
+
+.navbar-toggler {
+          border: 0px !important;
+}
+
+.navbar-toggler:focus {
+          border: 0px !important;
+          box-shadow: none !important;
 }
 
 @media screen and (max-width:768px) {
@@ -104,6 +159,11 @@ footer a {
           .hero-section h1 {
                     font-size: 2.5rem;
           }
+
+          .nav-link {
+                    margin-right: 0px;
+
+          }
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
@@ -115,5 +175,14 @@ footer a {
 
           .hero-section h1 {
                     font-size: 3rem;
+          }
+
+          .new_marketing img {
+                    width: 200px;
+
+          }
+
+          .content-taker {
+                    width: 150px;
           }
 }
